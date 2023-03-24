@@ -1,0 +1,27 @@
+.cards {
+  @include mobile {
+    padding: 40px 0;
+  }
+  @include tablet {
+    padding: 48px 0;
+  }
+  @include desktop {
+    padding: 60px 0;
+  }
+}
+
+.cards__list {
+  display: flex;
+  justify-content: center;
+
+  @include mobile {
+    flex-wrap: wrap;
+    row-gap: 28px;
+  }
+  @include tablet {
+    gap: 30px;
+  }
+  @include desktop {
+    row-gap: 40px;
+  }
+}
